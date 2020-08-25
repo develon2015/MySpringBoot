@@ -25,7 +25,7 @@ class JsonConfig(file: File) {
 				}
 			}
 
-			global[key] = value
+			global[key] = value.replace("\\\"", "\"")
 		}
 	}
 
